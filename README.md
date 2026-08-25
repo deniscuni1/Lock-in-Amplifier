@@ -68,38 +68,38 @@ Changing
 
   STAGE 2 - GAIN x11  (TL072 section B)
 
-               1uF
-  TIA OUT -----| |-----+----------------+
-                       |                |    |\
-                     [100k]             |    |  \
-                       |                +----|+   \
-                     VBIAS                   |     \
-                                             |      >----+----> GAIN OUT
-                                        +----|-    /     |     (pin 7)
-                                        |    |   /       |
-                                        |    | /         |
-                                        |    |/          |
-                                        |  TL072 B       |
-                                        |                |
-                                        +----/\/\/\------+
-                                        |      100k
-                                      [10k]
-                                        |
-                                      VBIAS
+                 1uF
+    TIA OUT -----| |-----+----------------+
+                         |                |    |\
+                       [100k]             |    |  \
+                         |                +----|+   \
+                       VBIAS                   |     \
+                                               |      >----+----> GAIN OUT
+                                          +----|-    /     |     (pin 7)
+                                          |    |   /       |
+                                          |    | /         |
+                                          |    |/          |
+                                          |  TL072 B       |
+                                          |                |
+                                          +----/\/\/\------+
+                                          |      100k
+                                        [10k]
+                                          |
+                                        VBIAS
 
 
   STAGE 3 - LEVEL SHIFT AND ANTI-ALIAS
 
-                                 5V
-                                  |
-                                [10k]
-               10uF               |              220
-  GAIN OUT -----| |---------------+-----------/\/\/\-----+------> A0
-                                  |                      |
-                                [10k]                   ---
-                                  |                     --- 100nF
-                                 GND                     |
-                                                        GND
+                                   5V
+                                    |
+                                  [10k]
+                 10uF               |              220
+    GAIN OUT -----| |---------------+-----------/\/\/\-----+------> A0
+                                    |                      |
+                                  [10k]                   ---
+                                    |                     --- 100nF
+                                   GND                     |
+                                                          GND
 
 
   MODULATOR
@@ -129,19 +129,19 @@ the issue by moving the measurement to a frequency of choice. This exact system 
 
 ## Materials
 Qty	Part	Notes
-1	TL072CP	dual JFET-input op-amp
-1	BPW34	photodiode, reverse-biased
-1	LED	any colour
-5	10 kΩ	3× VBIAS divider, 2× 2.5 V divider
-1	1 MΩ	transimpedance feedback
-2	100 kΩ	gain stage
-2	220 Ω	LED drive, anti-alias
-1	100 µF	VBIAS bypass
-1	10 µF	output coupling
-1	1 µF	interstage coupling
-2	100 nF	decoupling, anti-alias
-1	10 pF	feedback — often unnecessary
-1	9 V battery	~4 mA draw
+- 1	TL072CP	dual JFET-input op-amp
+- 1	BPW34	photodiode, reverse-biased
+- 1	LED	any colour
+- 5	10 kΩ	3× VBIAS divider, 2× 2.5 V divider
+- 1	1 MΩ	transimpedance feedback
+- 2	100 kΩ	gain stage
+- 2	220 Ω	LED drive, anti-alias
+- 1	100 µF	VBIAS bypass
+- 1	10 µF	output coupling
+- 1	1 µF	interstage coupling
+- 2	100 nF	decoupling, anti-alias
+- 1	10 pF	feedback — often unnecessary
+- 1	9 V battery	~4 mA draw
 
 ## Next steps
 After building the instrument, if you enjoyed building it and want to go further, you can use it to do absorbance, turbidity,
